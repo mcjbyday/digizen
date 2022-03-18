@@ -1,10 +1,9 @@
 
 /* this creates new variable types if they aren't existing OR they will be assigned  */
 /* perhaps this is so the css page doesn't show a blank page */
-/* :root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-} */
+:root {
+    --etchWidth: 500;
+}
 
 body {
     display: flex;
@@ -35,14 +34,14 @@ head {
 
 .hfers {
     background-color: #3e3e3e;
-    min-width: 600px;
+    min-width: 800px;
     min-height: 100px;
 }
 
 #margin_left, #margin_right {
     /* background-color: chartreuse; */
     min-width: 100px;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 .main_container {
@@ -52,53 +51,65 @@ head {
     align-items: center; 
     align-content: stretch;
     justify-content: space-evenly;
-    /* background-color: brown; */
     min-width: 800px;
     max-width: 800px;
-
-
 }
 
 .mainc_subsection {
     background-color: #3e3e3e;
     padding: 5px;
     align-content: stretch;
-
+    min-height: 800px;
+    max-height: 800px;
 }
 
-.grid_frame {
+#grid_frame {
     display: flex;
     flex-direction: column;
     padding: 10px;
     background-color: #3e3e3e;
-    flex: 1 1 0%;
+    justify-content: space-evenly;
+    align-items: center;
     align-content: stretch;
-    min-width: 800px;
-    max-width: 800px;
+    min-width: var(--etchWidth) px;
+    max-width: var(--etchWidth) px;
 }
 
-#grid_container {
+/*  Implementation 1 */
+/* #grid_container {
     display: grid;
     grid-template: repeat(var(--grid-rows), 1fr) / repeat(var(--grid-rows), 1fr);
-    /* grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-columns), 1fr); */
-    background-color: pink;
-    align-content: stretch;
-    max-width: 600px;
+    
+    background-color: #3e3e3e;
+    max-width: 1200px;
+} */
+
+/*  Implementation 2 */
+  
+#grid_container {
+    display: flex;
+    flex-flow: row wrap;
+    /* grid-template: repeat(var(--grid-rows), 1fr) / repeat(var(--grid-rows), 1fr); */
+    background-color: #3e3e3e;
+    /* max-width: 1200px; */
 }
   
 .grid_element {
-    border: 1px solid gray;
-    text-align: center;
-    display: inline-block;
-    color: blue; 
+    display: block;
+    content: '';
+    border: 1px solid #6e6e6e;
+    /* text-align: center; */
+    color: #3e3e3e; 
 }
- 
+.grid_element:hover {
+    color: #6e6e6e; 
+} 
+
 .interface_container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: orange;
+    background-color:  #6e6e6e;
     align-content: stretch;
     min-width: auto;
 }
@@ -108,11 +119,14 @@ head {
     flex-direction: row;
     background-color: #6e6e6e;
     padding: 1px;
+    margin: 5px;
+    justify-content: space-around;
 }
 
 /* properties for buttons */ 
 
 .game_choice_item {
+    display: flex;
     background-color: #3882F6;
     font-size: 16px;
     height: 26px;
@@ -122,24 +136,15 @@ head {
     border-radius: 12px;
     border: 1px solid;
     box-shadow: none;
-    flex-shrink: 0;
+    padding: 5px;
 }
 
-/* during different states */
-/* .game_choice_item:focus {
-    background-color: #6e6e6e;
-    outline: none;
-    border:none;
-  }
-   */
 .game_choice_item:hover {
-background-color: #3e3e3e;
-border: none;
-outline: none;
-box-shadow: none;
+    background-color: #3e3e3e;
+    border: 1px  solid #3e3e3e;
 }
-  
-  
+
+
 
 /* properties for links*/
 a {
