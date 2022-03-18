@@ -9,16 +9,18 @@
 body {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0%;
-    align-items: center;
+    /* flex: 1 1 0%; */
     justify-content: space-evenly;
+    align-items: center;
+    /* align-items: stretch; impacts header/footer */
+    /* didn't do anything.. justify-content: center; */
 
 }
 
 .header {
     background-color: green;
     /* removed this, box appears flex: 1 1 0%; */
-    width: 100px;
+    width: 600px;
     height: 100px;
 }
 
@@ -27,6 +29,7 @@ body {
     flex-direction: row;
     font-family: Helvetica, sans-serif;
     align-items: center; 
+    justify-content: center;
     /* justify-content: space-evenly; */
     /* margin: 0; */
     /* flex command would seem to imply a growth of 8 to 1 
@@ -37,27 +40,44 @@ body {
 .footer {
     background-color: green;
 /* removed this, box appears flex: 1 1 0%; */
-    width: 100px;
+    width: 600px;
     height: 100px;
 }
 
-.margin {
-    display: flex;
-    flex-direction: row;
+.mainc_subsection {
+    /* display: flex; */
+    /* flex-direction: row; */
     background-color: black;
     /* flex: 1; */
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .grid_frame {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1 1 0%;  
     padding: 10px;
     background-color: red;
     flex: 4 1 0%;
 }
-  
+/* 
+.player_interface {
+    display: flex;
+    flex: 4 1 0%;
+    margin: 5px;
+    padding: 5px;
+    background-color: saddlebrown;
+    
+} */
+
+.res_choices {
+    display: flex;
+    flex: 1 1 0%;
+    padding: 1px;
+    background-color: aqua;
+    justify-content: center;
+}
+
 #grid_container {
     display: grid;
     /* grid-gap: 1em; */
@@ -65,8 +85,9 @@ body {
     Each fr unit allocates one share of the available space. 
     E.g., if two elements are set to 1fr and 3fr respectively, the space is divided into 4 equal shares;
     the first element occupies 1/4 and the second element 3/4 of any leftover space.*/
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    grid-template: repeat(var(--grid-rows), 1fr) / repeat(var(--grid-rows), 1fr);
+    /* grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr); */
     background-color: pink;
 }
   
