@@ -1,27 +1,48 @@
 
 /* this creates new variable types if they aren't existing OR they will be assigned  */
 /* perhaps this is so the css page doesn't show a blank page */
-:root {
+/* :root {
     --grid-cols: 1;
     --grid-rows: 1;
-}
+} */
 
 body {
     display: flex;
     flex-direction: column;
-    /* flex: 1 1 0%; */
+    font-family: Helvetica, sans-serif;
+    align-content: stretch;
     justify-content: space-evenly;
-    align-items: center;
-    /* align-items: stretch; impacts header/footer */
-    /* didn't do anything.. justify-content: center; */
-
+    gap: 30px;
+    height: 1000px;
+    background-color: #252525;
+    /* margin: 0; */
+    /* flex-grow: initial; */
+  
+}
+head {
+    flex: 0;
+    margin: 0;
+    height: 0px;
 }
 
-.header {
-    background-color: green;
-    /* removed this, box appears flex: 1 1 0%; */
-    width: 600px;
-    height: 100px;
+.page_content {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+.hfers {
+    background-color: #3e3e3e;
+    min-width: 600px;
+    min-height: 100px;
+}
+
+#margin_left, #margin_right {
+    /* background-color: chartreuse; */
+    min-width: 100px;
+    min-height: 600px;
 }
 
 .main_container {
@@ -29,86 +50,122 @@ body {
     flex-direction: row;
     font-family: Helvetica, sans-serif;
     align-items: center; 
-    justify-content: center;
-    /* justify-content: space-evenly; */
-    /* margin: 0; */
-    /* flex command would seem to imply a growth of 8 to 1 
-    WITHIN the container to override the body's 1 1 0 assignment...*/
-    /* flex: 50 1 0%;  */
-}
+    align-content: stretch;
+    justify-content: space-evenly;
+    /* background-color: brown; */
+    min-width: 800px;
+    max-width: 800px;
 
-.footer {
-    background-color: green;
-/* removed this, box appears flex: 1 1 0%; */
-    width: 600px;
-    height: 100px;
+
 }
 
 .mainc_subsection {
-    /* display: flex; */
-    /* flex-direction: row; */
-    background-color: black;
-    /* flex: 1; */
-    /* padding: 5px; */
+    background-color: #3e3e3e;
+    padding: 5px;
+    align-content: stretch;
+
 }
 
 .grid_frame {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0%;  
     padding: 10px;
-    background-color: red;
-    flex: 4 1 0%;
-}
-/* 
-.player_interface {
-    display: flex;
-    flex: 4 1 0%;
-    margin: 5px;
-    padding: 5px;
-    background-color: saddlebrown;
-    
-} */
-
-.res_choices {
-    display: flex;
+    background-color: #3e3e3e;
     flex: 1 1 0%;
-    padding: 1px;
-    background-color: aqua;
-    justify-content: center;
+    align-content: stretch;
+    min-width: 800px;
+    max-width: 800px;
 }
 
 #grid_container {
     display: grid;
-    /* grid-gap: 1em; */
-    /* Grid also introduces a new unit, the fractional fr. 
-    Each fr unit allocates one share of the available space. 
-    E.g., if two elements are set to 1fr and 3fr respectively, the space is divided into 4 equal shares;
-    the first element occupies 1/4 and the second element 3/4 of any leftover space.*/
     grid-template: repeat(var(--grid-rows), 1fr) / repeat(var(--grid-rows), 1fr);
     /* grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-columns), 1fr); */
     background-color: pink;
+    align-content: stretch;
+    max-width: 600px;
 }
   
 .grid_element {
-    /* padding: 1em; */
     border: 1px solid gray;
     text-align: center;
-    /* min-width: 15px;
-    min-height: 15px; */
     display: inline-block;
     color: blue; 
 }
-
-/* body {
-    width: 100px;
-    height: 100px;
+ 
+.interface_container {
     display: flex;
-    flex-direction: column;
-    font-family: Helvetica, sans-serif;
-    align-items: stretch;
-    justify-content: space-evenly;
-    margin: 0;
-} */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: orange;
+    align-content: stretch;
+    min-width: auto;
+}
 
+.toggle_menu, .res_choices {
+    display: flex;
+    flex-direction: row;
+    background-color: #6e6e6e;
+    padding: 1px;
+}
+
+/* properties for buttons */ 
+
+.game_choice_item {
+    background-color: #3882F6;
+    font-size: 16px;
+    height: 26px;
+    color: #E5E7EB;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid;
+    box-shadow: none;
+    flex-shrink: 0;
+}
+
+/* during different states */
+/* .game_choice_item:focus {
+    background-color: #6e6e6e;
+    outline: none;
+    border:none;
+  }
+   */
+.game_choice_item:hover {
+background-color: #3e3e3e;
+border: none;
+outline: none;
+box-shadow: none;
+}
+  
+  
+
+/* properties for links*/
+a {
+    font-size: 18px;
+    outline: none;
+    /* removes underlining of links */
+    /*inspired by "web-page-pilot"*/
+    text-decoration: none;
+  }
+  
+  a.link-attributes:link { 
+    color: #E5E7EB;
+  }
+  
+  /*To change the selected link color:*/
+  a.link-attributes​:active {
+    color: purple; 
+  }
+  
+  /*To change the mouseover color:*/
+  a.link-attributes​:hover {
+    color: green; 
+  }
+  
+  /*To change the active color:*/
+  a.link-attributes​:active { 
+    color: blue; 
+  }
+  

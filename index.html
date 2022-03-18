@@ -7,30 +7,31 @@
     <title>Workspace</title>
 </head>
 <body>
-    <div class="header"></div>
-    <div class="main_container">
-        <div class="mainc_subsection" id="margin_left"></div>
-        <div class="mainc_subsection" id="grid_frame">
-            <div class="interface_container" id="grid_container">
-                <!-- commented out the below lines as these are created in a loop by etch.js-->
-                <!-- <div id="grid_element"> -->
-            </div>
-            <div class="interface_container" id="options_interface">
-                <div class="toggle_menu">
-                    <button class="game_choice_item" id="reset">Reset Canvas</button>
-                    <!-- <button class="toggle_darkmode" id="med-res">Med Res</button> -->
+    <div class="page_content">
+        <div class="hfers" id="header"></div>
+        <div class="main_container">
+            <div class="mainc_subsection" id="margin_left"></div>
+            <div class="mainc_subsection" id="grid_frame">
+                <div class="interface_container" id="grid_container">
+                    <!-- commented out the below lines as these are created in a loop by etch.js-->
+                    <!-- <div id="grid_element"> -->
                 </div>
-                <div class="res_choices">
-                    <button class="game_choice_item" id="high-res">High Res</button>
-                    <button class="game_choice_item" id="med-res">Med Res</button>
-                    <button class="game_choice_item" id="low-res">Low Res</button>
+                <div class="interface_container" id="options_interface">
+                    <div class="res_choices">
+                        <button class="game_choice_item" id="high-res">High</button>
+                        <button class="game_choice_item" id="med-res">Medium</button>
+                        <button class="game_choice_item" id="low-res">Low</button>
+                    </div>
+                    <div class="toggle_menu">
+                        <button class="game_choice_item" id="reset">Reset Canvas</button>
+                        <button class="game_choice_item" id="UNDEFINED">button lorem</button>
+                    </div>
                 </div>
             </div>
+            <div class="mainc_subsection" id="margin_right"></div>
         </div>
-        <div class="mainc_subsection" id="margin_right"></div>
+        <div class="hfers" id="footer"></div>
     </div>
-    <div class="footer"></div>
     <script src="etch.js"></script>
-
 </body>
 </html>
