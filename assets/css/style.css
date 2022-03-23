@@ -1,0 +1,115 @@
+
+* {
+    /* border: 2px dotted red; */
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    background-color: green;
+    /* code unknown utility as of 4pm 3/23 */
+    /* left: 50%;
+    transform: translate(-50%); */
+}
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.side_margin {
+    /* background-color: black; */
+}
+.interactive_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #939597;
+    width: 550px;
+    height: 650px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+
+#grid_container {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: #b6b18f;
+    z-index: 100;
+}
+
+#interface {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 5%;
+    align-items: center;
+}
+
+.btn {
+    background-color: #d8cf94;
+    font-size: 16px;
+    height: 26px;
+    color: #3882F6;
+    border-radius: 12px;
+    border: 1px solid;
+    box-shadow: none;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: #3e3e3e;
+    border: 1px  solid #3e3e3e;
+}
+
+
+.grid_element {
+    display: inline-block;
+    min-height: 1px ;
+    color: #f5df4d; 
+}
+
+/* properties for links*/
+a {
+    font-size: 18px;
+    outline: none;
+    /* removes underlining of links */
+    /*inspired by "web-page-pilot"*/
+    text-decoration: none;
+  }
+  
+  a.link-attributes:link { 
+    color: #E5E7EB;
+  }
+  
+  /*To change the selected link color:*/
+  a.link-attributes​:active {
+    color: purple; 
+  }
+  
+  /*To change the mouseover color:*/
+  a.link-attributes​:hover {
+    color: green; 
+  }
+  
+  /*To change the active color:*/
+  a.link-attributes​:active { 
+    color: blue; 
+  }
+  
+
+
+
