@@ -12,8 +12,8 @@ Welcome to digizen, a place that records a 2 dimensional record of where you hov
 ## Screenshot
 | Image | Description |
 | --- | ----------- |
-| ![Webpage Screenshot 1](/assets/screenshots/) | In progress (Daylight) |
-| ![Webpage Screenshot 2](/assets/screenshots/) | Latest (Default) |
+| ![Webpage Screenshot 1](./assets/screenshots/screenshot1_inProgress.png) | In progress (Daylight) |
+| ![Webpage Screenshot 2](./assets/screenshots/screenshot2_Latest.png) | Latest (Default) |
 
 ## Why?
 We all can benefit from a bit of recorded mouse hovering from time to time.<br>
