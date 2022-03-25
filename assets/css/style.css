@@ -46,11 +46,20 @@ header, footer {
     display: grid;
     width: 500px;
     height: 500px;
-    background-color: #b6b18f;
+    /* background-color: #b6b18f; */
     z-index: 100;
 }
 
-#interface {
+#mode_interface {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 5%;
+    align-items: center;
+}
+
+#density_interface {
     display: flex;
     width: 100%;
     flex-direction: row;
