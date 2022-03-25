@@ -9,23 +9,29 @@ Welcome to digizen, a place that records a 2 dimensional record of where you hov
 ## See it live
 [Digizen!](https://mcjbyday.github.io/digizen/)
 
-## Why?
-We all can benefit from a bit of recorded mouse hovering from time to time.<br>
-
-## References
-
-### Odin project
-Visit [The Odin Project](https://www.theodinproject.com/) to learn about a community that is helping developers understand programming concepts at no cost to them.
-
-### 
-
-
 ## Screenshot
 | Image | Description |
 | --- | ----------- |
 | ![Webpage Screenshot 1](/assets/screenshots/) | In progress (Daylight) |
 | ![Webpage Screenshot 2](/assets/screenshots/) | Latest (Default) |
 
+## Why?
+We all can benefit from a bit of recorded mouse hovering from time to time.<br>
+
+
+## References / inspiration
+
+### Odin project
+Visit [The Odin Project](https://www.theodinproject.com/) to learn about a community that is helping developers understand programming concepts at no cost to them.
+
+### Color-hex
+[Color Palettes Color Schemes](https://www.color-hex.com/color-palettes/)
+
+### Coding Bliss
+https://www.youtube.com/watch?v=wtBt9oGAxBc
+
+### Rise to code
+https://www.youtube.com/watch?v=ACP61O9f618
 
 ## Other
 <p>No external installations are required to view this website. 
