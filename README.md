@@ -9,7 +9,7 @@ Welcome to digizen, a place that records a 2 dimensional record of where you hov
 ## See it live
 [Digizen!](https://mcjbyday.github.io/digizen/)
 
-## Screenshot
+## Screenshots
 | Image | Description |
 | --- | ----------- |
 | ![Webpage Screenshot 1](./assets/screenshots/screenshot1_inProgress.png) | In progress (Daylight) |
