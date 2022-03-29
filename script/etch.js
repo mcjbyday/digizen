@@ -64,10 +64,15 @@ function makeGrid(rows, cols) {
 
 function etchDefault() {
   const cellItems = document.querySelectorAll('#grid_container > div');
-  const mainBackG = document.querySelector('.main_container');
+  const mainBackG = document.querySelector('.page');
   const containerBackG = document.querySelector('.interactive_container');
-
+  const vertBoundaryBackG = document.querySelector('.vertboundary');
+  const footerBackG = document.querySelector('#footer');
   mainBackG.style.backgroundColor = '#a3b5de',
+  vertBoundaryBackG.style.backgroundColor = '#a3b5de',
+  vertBoundaryBackG.style.color = '#000000'
+  footerBackG.style.backgroundColor = '#a3b5de',
+  footerBackG.style.color = '#000000'
   containerBackG.style.backgroundColor = '#4e81db',
   cellItems.forEach((item) => {
     item.count = 0;
@@ -82,11 +87,17 @@ function etchDefault() {
 
 function etchingNormal() {
   const cellItems = document.querySelectorAll('#grid_container > div');
-  const mainBackG = document.querySelector('.main_container');
+  const mainBackG = document.querySelector('.page');
   const containerBackG = document.querySelector('.interactive_container');
+  const vertBoundaryBackG = document.querySelector('.vertboundary');
+  const footerBackG = document.querySelector('#footer');
   buttonNorm.textContent = "Daylight";
   buttonNorm.addEventListener('click' , () => {
     mainBackG.style.backgroundColor = '#FFFFFF',
+    vertBoundaryBackG.style.backgroundColor = '#FFFFFF',
+    vertBoundaryBackG.style.color = '#000000',
+    footerBackG.style.backgroundColor = '#FFFFFF',
+    footerBackG.style.color = '#000000',
     containerBackG.style.backgroundColor = '#939597',
     cellItems.forEach((item) => {
       item.count = 0;
@@ -102,12 +113,18 @@ function etchingNormal() {
 
 function etchingDark() {
   const cellItems = document.querySelectorAll('#grid_container > div');
-  const mainBackG = document.querySelector('.main_container');
+  const mainBackG = document.querySelector('.page');
   const containerBackG = document.querySelector('.interactive_container');
+  const vertBoundaryBackG = document.querySelector('.vertboundary');
+  const footerBackG = document.querySelector('#footer');
   buttonDark.textContent = "Late Night";
   buttonDark.addEventListener('click' , () => {
     // startPage();
     mainBackG.style.backgroundColor = '#000000',
+    vertBoundaryBackG.style.backgroundColor = '#000000',
+    vertBoundaryBackG.style.color = '#FFFFFF'
+    footerBackG.style.backgroundColor = '#000000',
+    footerBackG.style.color = '#FFFFFF'
     containerBackG.style.backgroundColor = '#252525',
     cellItems.forEach((item) => {
       item.count = 0;
